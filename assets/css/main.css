@@ -1,0 +1,31 @@
+body {
+    background: #0B0C24 url(../img/bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+#wrap {
+    display: block;
+    
+}
+.msg-screen {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    background-color: rgba(255,255,255, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(255,255,255,0.5);
+    -moz-box-shadow: 0px 0px 19px 0px rgba(255,255,255,0.5);
+    box-shadow: 0px 0px 19px 0px rgba(255,255,255,0.5);
+}
+
+.btn {
+    padding: 10px 20px;
+    cursor: pointer;
+}
