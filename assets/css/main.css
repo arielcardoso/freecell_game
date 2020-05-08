@@ -2,10 +2,92 @@ body {
     background: #0B0C24 url(../img/bg.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 #wrap {
     display: block;
-    
+    padding: 30px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Cards */
+.card {
+    width: 100px; height: 140px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.card img {
+    border-radius: 3px;
+}
+.card img {
+    width: 100%;
+}
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Columns */
+.columns .col {
+    width: 100px;
+    min-height: 142px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    text-align: center;
+    background: url(../img/cards/empty.svg) no-repeat top center;
+    background-size: 100px auto;
+}
+
+/* Empty Slot */
+.slot {
+    position: relative;
+    display: inline-block;
+    width: 100px; height: 140px;
+    margin: 0;
+    background: url(../img/cards/empty.svg) no-repeat top center;
+    background-size: 100px auto;
+}
+.effect-hover {
+    opacity: .7;
+    transition: .25s ease-in;
+}
+
+/* Suit Slots */
+.suit-slots .slot {
+    width: 100px;
+}
+.slot-hearts {
+    background: url(../img/cards/hearts/empty.svg) no-repeat center center;
+    background-size: 100% auto;
+}
+.slot-spades {
+    background: url(../img/cards/spades/empty.svg) no-repeat center center;
+    background-size: 100% auto;
+}
+.slot-diamonds {
+    background: url(../img/cards/diamonds/empty.svg) no-repeat center center;
+    background-size: 100% auto;
+}
+.slot-clubs {
+    background: url(../img/cards/clubs/empty.svg) no-repeat center center;
+    background-size: 100% auto;
+}
+
+/* UI Screens */
+.btn {
+    padding: 10px 20px;
+    cursor: pointer;
 }
 .msg-screen {
     display: block;
@@ -23,9 +105,4 @@ body {
     -webkit-box-shadow: 0px 0px 19px 0px rgba(255,255,255,0.5);
     -moz-box-shadow: 0px 0px 19px 0px rgba(255,255,255,0.5);
     box-shadow: 0px 0px 19px 0px rgba(255,255,255,0.5);
-}
-
-.btn {
-    padding: 10px 20px;
-    cursor: pointer;
 }
