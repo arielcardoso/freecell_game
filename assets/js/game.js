@@ -60,6 +60,7 @@ function gameInit() {
 function gameReset() {
     $('#start-screen').hide();
     $('#winner-screen').hide();
+    $('#overlay').hide();
     $('#game-screen').show();
 
     newDeck();
@@ -127,14 +128,8 @@ function shuffleArray(array) {
 }
 
 function gameWin() {
+    $('#overlay').show();
     $('#winner-screen').show();
-
-    let intDelay = 500;
-    for (let idx=12; idx>=0; idx--){
-        $('.card[data-number='+CARD_DECK.cards[idx].number+']').each(function(i,card){
-            $(card).animate( {left:( Math.floor(Math.random()*12) * 100 )+'px', top:($(window).innerHeight()*1.1)+'px'}, (intDelay += 100), function(){$(this).remove();} );
-        });
-    }
 }
 
 function handleDropInEmptySlots(event, obj, drop) {
