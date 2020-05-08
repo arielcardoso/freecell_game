@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="242px" height="340px" viewBox="0 0 242 340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>diamonds/empty</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Empty-Slots" transform="translate(-306.000000, -60.000000)" fill="#FFFFFF">
+            <g id="diamonds/empty" transform="translate(306.000000, 60.000000)">
+                <polygon id="BG" fill-opacity="0.1" points="0 0 242 0 242 340 0 340"></polygon>
+                <polygon id="Carreau" opacity="0.201543899" points="84 173.538891 121.5 211.625 159 173.538891 121.5 135.453125"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
